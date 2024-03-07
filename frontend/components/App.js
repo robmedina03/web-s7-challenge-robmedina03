@@ -1,25 +1,30 @@
 import React from 'react'
 import Home from './Home'
 import Form from './Form'
-import { BrowserRouter as Router, Link, Route,Routes } from 'react-router-dom'
+import { BrowserRouter as Router,  NavLink, Route,Routes } from 'react-router-dom'
 
 function App() {
+  
+    
+
   return (
-    <Router>
+   
     <div id="app">
       <nav>
-        <Link to= "W_S7_Challenge" className= "active" aria-current= "page" >Home</Link>
-        <Link to= "/form" className= "active" aria-current= "page" >Order</Link>
+        
+        <NavLink to= "/" activeClassName= 'active' exact >Home</NavLink>
+        <NavLink to= "/order" activeClassName= "active">Order</NavLink>
       </nav>
       <Routes>
-      <Route path= "W_S7_Challenge" element={<Home />} />
-      <Route path= "/form" element={<Form />} />
+      <Route path= "/" element={<Home />} />
+      <Route path= "/order" element={<Form />} />
       </Routes>
-      <Home />
-      <Form />
+      
     </div>
-    </Router>
-  )
+ 
+    
+    
+  );
 }
 
 export default App

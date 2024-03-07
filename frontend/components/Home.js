@@ -8,7 +8,7 @@ function Home() {
       <h2>
         Welcome to Bloom Pizza!
       </h2>
-      <Link to = "/form">
+      <Link to = "/order">
       
       <img alt="order-pizza" style={{ cursor: 'pointer' }} src={pizza} />
       </Link>
