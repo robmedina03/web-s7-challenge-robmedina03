@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './Home'
 import Form from './Form'
-import { BrowserRouter as Router,  NavLink, Route,Routes } from 'react-router-dom'
+import { BrowserRouter as   NavLink, Route,Routes } from 'react-router-dom'
 
 function App() {
   
