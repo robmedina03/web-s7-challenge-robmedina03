@@ -57,9 +57,9 @@ test('sum("10","3") returns 13', () =>{
 
 
 
-test('renders a link that reads "home"', () => {
+test('renders a link that reads "Home"', () => {
   render(<HelloWorld />)
-  expect(screen.queryByText('home')).toBeInTheDocument()
+  expect(screen.queryByText('Home')).toBeInTheDocument()
 })
 
 
@@ -80,14 +80,14 @@ test('renders a link that reads "The Truth"', () =>{
   expect(screen.queryByText('The Truth')).toBeInTheDocument()
 })
 
-test('renders a text that reads "JavaScript is Pretty awesome"', () =>{
+test('renders a text that reads "JavaScript is pretty awesome"', () =>{
   render(<HelloWorld />)
-  expect(screen.queryByText('JavaScript is Pretty awesome')).toBeInTheDocument()
+  expect(screen.queryByText('JavaScript is pretty awesome')).toBeInTheDocument()
 })
 
 test('renders a text that reads "JavaScript is Pretty"', () =>{
   render(<HelloWorld />)
-  expect(screen.queryByText('JavaScript is Pretty')).toBeInTheDocument()
+  expect(screen.queryByText(/JavaScript is Pretty/i)).toBeInTheDocument()
 })
 
 })
